@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='HandheldFriendly' content='True' />
+	<meta name='viewport' content='user-scalable=0' />
+	<meta name="viewport" content="width=device-width" />
+	<title>swiper</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="dist/idangerous.swiper.css">-->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
+</head>
+<body>
+	<div class="swiper-container">
+	<div class="star-header">
+	    <img class="logo-text" src="img/logo_text.png">
+	    <img class="logo-img" src="img/logoright.png">
+	</div>
+		<div class="swiper-wrapper">
+			<!--第一页-->
+			<div class="swiper-slide swiper-slide1" id="swiper1">
+				<div class="star-title headh1">
+				    <h1>你的安全感</h1>
+				    <h1>从何处而来</h1>
+			    </div>
+				<div id="car" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <!-- 汽车 -->
+                    <img src="img/car.png">
+                    <!-- 车轮 -->
+                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                </div>
+                <div id="" class="totwo">
+                	<a href="">即刻探索</a>
+                </div>
+			</div>
+			<div class="swiper-slide swiper-slide2">
+				<div class="hello">
+				   <div class="demo swiper-no-swiping">
+				   		<canvas id="canvas1"></canvas>
+				   </div>
+				</div>
+			</div>
+			<div class="swiper-slide swiper-slide3">
+				3
+			</div>
+			<div class="swiper-slide swiper-slide4">
+				4
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+	<!-- animate JS -->
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// 初始化 Swiper
+	    var swiper = new Swiper('.swiper-container', {
+	        //布局 
+	        pagination: '.swiper-pagination',
+			noSwiping : true,
+	        //值为真时，当单击指示器时会执行过渡动画到目标slide
+	        // paginationClickable: true,
+	
+	        //方向：垂直
+	        direction: 'vertical',
+	
+	        //实现无缝切换
+	        //loop:true
+	
+	        //自动播放
+	        // autoplay:1000
+	
+	        //动画
+	        onInit: function(swiper){           //Swiper2.x的初始化是onFirstInit
+	            swiperAnimateCache(swiper);     //隐藏动画元素 
+	            swiperAnimate(swiper);          //初始化完成开始动画
+	        },
+	        onSlideChangeEnd: function(swiper){ 
+	            swiperAnimate(swiper);          //每个slide切换结束时也运行当前slide动画
+	        }
+	    });
+	     $(function(){
+	    /*按屏幕修改根文本尺寸*/
+		    var setRootFont=function(){
+		      var ww=$(document.body).width();
+		      ww=ww>1024?1024:ww;
+		      var f=Math.floor(ww/ 24);
+		      $("html").css("font-size",f+"px");
+		      $("body").css("font-size",f+"px");
+		      console.log("RFS:"+f+"  ("+$("body").width()+"x"+$("body").height()+")");
+		    };
+	    setRootFont();
+		    $(window).resize(function(){setRootFont();});
+		    
+		   
+	     }); 
+	</script>
+</body>
+</html>
