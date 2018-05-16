@@ -21,7 +21,7 @@
 	img.src = imgs[0];
 	imgArr.push(img)
 	var img2= new Image();
-	img2.src='img/p9.jpg';
+	img2.src='img/p2.jpg';
 	imgArr.push(img2);
 	console.log(imgArr)
 	for(var i = 0; i<imgArr.length;i++){
