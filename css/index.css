@@ -32,11 +32,13 @@ a:hover {
 }
 
 .swiper-slide3 {
-	background: linear-gradient(45deg, #99ccff, #0066cc);
+	/*background: linear-gradient(45deg, #99ccff, #0066cc);*/
+	background:#FFFFFF;
 }
 
 .swiper-slide4 {
-	background: linear-gradient(135deg, #99ccff, #0066cc);
+	/*background: linear-gradient(135deg, #99ccff, #0066cc);*/
+	background:#FFFFFF;
 }
 
 
