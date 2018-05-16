@@ -6,12 +6,12 @@
 	var height=document.body.clientHeight;
 	bodyStyle.mozUserSelect = 'none';
 	bodyStyle.webkitUserSelect = 'none';
-	var canvas = document.getElementById("canvas1");
+	// var canvas = document.getElementById("canvas1");
+	var canvas;
 	var canvas2 = document.getElementById("canvas2");
 	var canvas3 = document.getElementById("canvas3");
 	var canvas4 = document.getElementById("canvas4");
-	canvas.style.backgroundColor='transparent';
-	canvas.style.position = 'absolute';
+
 	
 	var imgArr = [];//加载图片数组
 	var imgNum=0;//判断是否加载全
@@ -21,18 +21,21 @@
 	img.src = imgs[0];
 	imgArr.push(img)
 	var img2= new Image();
-	img2.src='img/p2.jpg';
+	img2.src='img/p9.jpg';
 	imgArr.push(img2);
+	console.log(imgArr)
 	for(var i = 0; i<imgArr.length;i++){
-	    imgArr[i].onload = function(){
+		console.log(i)
+	    imgArr[i].onload = function(i){
+	        canvas = document.getElementById("canvas"+(imgNum+1));
 	        imgNum++;
-	        console.log(imgNum,imgArr)
-	        if(imgNum==imgArr.length){
-	            drawCanvas();
-	        }
+			canvas.style.backgroundColor='transparent';
+			canvas.style.position = 'absolute';
+	        drawCanvas(canvas);
 	    }
 	}
-	var drawCanvas = function(){
+	var drawCanvas = function(canvas){
+		// console.log(this)
 		var ctx;
 	    var w = width,
 	    	h = height;
@@ -41,6 +44,7 @@
 	    var mousedown = false;
 		
 	    function layer(ctx) {
+	    	console.log(ctx)
 	        ctx.drawImage(img2,0,0,img2.width,img2.height,0,0,w,h);
 	        ctx.fillRect(0, 0, w, h);
 	    }
@@ -58,7 +62,7 @@
 	        ctx.fillStyle='transparent';
 	        ctx.fillRect(0, 0, w, h);
 	        ctx.clearRect(0, 0, w, h);
-	        $(".demo").removeClass("swiper-no-swiping");
+	        $(this).parents(".swiper-slide").find(".demo").removeClass("swiper-no-swiping");
 	    }
 	
 	    function eventMove(e){
@@ -74,7 +78,7 @@
                  fillStyle="red"
                  arc(x, y, 40, 0, Math.PI * 2);
 	                 fill();
-                 console.log(x,y)
+                 // console.log(x,y)
 	             }
 	        }
 	    }
@@ -86,6 +90,7 @@
 	    canvas.style.backgroundPosition='center';
    		canvas.style.backgroundRepeat='no-repeat';
 	    ctx=canvas.getContext('2d');
+	    // console.log(ctx)
 	    
 	    ctx.fillStyle='transparent';
 	    ctx.fillRect(0, 0, w, h);

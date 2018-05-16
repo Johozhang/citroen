@@ -1,0 +1,218 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  overflow: hidden;
+}
+.swiper-slide6{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑";
+  position: relative;
+}
+.swiper-slide6 .star-header{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0.8rem 1.333333rem;
+}
+.swiper-slide6 .logo-text{
+  width: 4.933333rem;
+}
+.swiper-slide6 .logo-img{
+  width: 4.0rem;
+}
+.swiper-slide6 .star-title{
+  color: #de0d38;
+  text-align: center;
+}
+.swiper-slide6 .star-title h1{
+  font-size:1.333333rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+}
+.swiper-slide6 .star-title p{
+  padding: 0 1.666667rem;
+}
+.swiper-slide6 .star-car{
+  text-align: center;
+  margin-top: 1.333333rem;
+  position: relative;
+  z-index: 2;
+}
+.swiper-slide6 .star-car img{
+  width: 11.333333rem;
+}
+.swiper-slide6 .star-wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background: url(../img/star-bg.png);
+  background-size: 100% auto;
+  margin-top: -2.933333rem;
+}
+.swiper-slide6 .star-box{
+  width: 12.0rem;
+  height: 12.0rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5.333333rem;
+  margin: auto;
+}
+.swiper-slide6 .star-box .big-star{
+  width: 12.0rem;
+  height: 12.0rem;
+}
+.swiper-slide6 .star-box .small-star{
+  width: 2.266667rem;
+  height: 2.266667rem;
+  position: absolute;
+  top: 6.2rem;
+  display: none;
+}
+.swiper-slide6 .star-box .small-star1{
+  left: -1.333333rem;
+}
+.swiper-slide6 .star-box .small-star2{
+  left: -4.333333rem;
+}
+.swiper-slide6 .star-box .small-star3{
+  right: -1.333333rem;
+}
+.swiper-slide6 .star-box .small-star4{
+  right: -4.333333rem;
+}
+.swiper-slide6 .anchor{
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 0.75rem;
+}
+.swiper-slide6 .anchor1{
+  width: 0.75rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.swiper-slide6 .anchor2{
+  width: 0.75rem;
+  position: absolute;
+  left: 0;
+  top: 4.3rem;
+}
+.swiper-slide6 .anchor3{
+  width: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 4.3rem;
+}
+.swiper-slide6 .anchor4{
+  width: 0.75rem;
+  position: absolute;
+  left: 2rem;
+  top: 11.375rem;
+}
+.swiper-slide6 .anchor5{
+  width: 0.75rem;
+  position: absolute;
+  right: 2rem;
+  top: 11.375rem;
+}
+.swiper-slide6 .anchor-text{
+  font-weight: bold;
+  width: 11.25rem;
+  color: #fff;
+  position: absolute;
+  left: -5.625rem;
+  top: -2.0rem;
+  font-size: 0.933333rem;
+  display: none;
+}
+.swiper-slide6 .anchor2 .anchor-text{
+  left: -6.5rem;
+  top: -3.2rem;
+}
+.swiper-slide6 .anchor3 .anchor-text{
+  left: -3.8rem;
+}
+.swiper-slide6 .anchor4 .anchor-text{
+  left: -7.5rem;
+  top: 1.2rem;
+}
+.swiper-slide6 .anchor5 .anchor-text{
+  left: -2.5rem;
+  top: 1.2rem;
+}
+.swiper-slide6 .star-button{
+  font-size: 0.933333rem;
+  color: #de0d38;
+  background-color: #fff;
+  width: 12.0rem;
+  text-align: center;
+  line-height: 2.666667rem;
+  position: absolute;
+  top: 20.666667rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.swiper-slide6 .star-box .hand{
+  color: #fff;
+  margin-left: 4rem;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 5rem;
+}
+.swiper-slide6 .star-box .hand img{
+  width: 5.0rem;
+  height: auto;
+}
+.swiper-slide6 #swiper-wrap .swiper-button-next, .swiper-slide6 #swiper-wrap .swiper-button-prev{
+  width: 44px;
+  background-size: 44px 44px;
+}
+.swiper-slide6 #swiper-wrap .swiper-button-next{
+  background-image:url(../img/swiper-right.png);
+}
+.swiper-slide6 #swiper-wrap .swiper-button-prev{
+  background-image:url(../img/swiper-left.png);
+}
+.swiper-slide6 #swiper-wrap{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.swiper-slide6 #swiper-wrap .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide6 #swiper-wrap  .close-btn{
+  position: absolute;
+  right: 1.333333rem;
+  top: 1.866667rem;
+  z-index: 4;
+}
+.swiper-slide6 #swiper-wrap .close-btn img{
+  width: 1.5rem;
+}

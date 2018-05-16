@@ -1,206 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-		<meta charset="UTF-8">
-		<meta name='HandheldFriendly' content='True' />
-		<meta name='viewport' content='user-scalable=0' />
-		<meta name="viewport" content="width=device-width" />
-		<title>swiper</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<!--<link rel="stylesheet" type="text/css" href="dist/idangerous.swiper.css">-->
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script>
-			(function(a, e, f, g, b, c, d) {
-				a.ClickiTrackerName = b;
-				a[b] = a[b] || function() {
-					(a[b].queue = a[b].queue || []).push(arguments)
-				};
-				a[b].start = +new Date;
-				c = e.createElement(f);
-				d = e.getElementsByTagName(f)[0];
-				c.async = 1;
-				c.src = g;
-				d.parentNode.insertBefore(c, d)
-			})(window, document, 'script', ('https:' == document.location.protocol ? 'https://stm-collect' : 'http://stm-cdn') + '.cn.miaozhen.com/clicki.min.js', 'stm_clicki');
-			stm_clicki('create', 'dc-204', 'auto');
-			stm_clicki('send', 'pageview');
-		</script>
-	</head>
-
-	<body>
-		<div class="swiper-container">
-			
-			<div class="swiper-wrapper">
-				<!--第一页-->
-				<div class="swiper-slide swiper-slide1" id="swiper1">
-					<div class="star-header">
-						<img class="logo-text" src="img/logo_text.png">
-						<img class="logo-img" src="img/logoright.png">
-					</div>
-					<div class="star-title headh1">
-					    <h1>你的安全感</h1>
-					    <h1>从何处而来</h1>
-				    </div>
-					<div id="car" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
-	                    <img src="img/car.png">
-	                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
-	                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
-	                </div>
-	                <div id="" class="totwo">
-	                	<a href="">即刻探索</a>
-	                </div>
+<head>
+	<meta charset="UTF-8">
+	<meta name='HandheldFriendly' content='True' />
+	<meta name='viewport' content='user-scalable=0' />
+	<meta name="viewport" content="width=device-width" />
+	<title>swiper</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--<link rel="stylesheet" type="text/css" href="dist/idangerous.swiper.css">-->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" href="css/star.css">
+</head>
+<body>
+	<div class="swiper-container" id="swiper">
+		<div class="swiper-wrapper">
+			<!--第一页-->
+			<div class="swiper-slide swiper-slide1" id="swiper1">
+				<div class="star-header">
+				    <img class="logo-text" src="img/logo_text.png">
+				    <img class="logo-img" src="img/logoright.png">
 				</div>
-				
-				<!--第二页-->
-				<div class="swiper-slide swiper-slide3">
-					<div class="star-header">
-						<img class="logo-text" src="img/logo_text.png">
-						<img class="logo-img" src="img/logoright.png">
-					</div>
-					<div class="hello">
-						<div class="demo swiper-no-swiping">
-							<canvas id="canvas1"></canvas>
-						</div>
-					</div>
+				<div class="star-title headh1">
+				    <h1>你的安全感</h1>
+				    <h1>从何处而来</h1>
+			    </div>
+				<div id="car" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <!-- 汽车 -->
+                    <img src="img/car.png">
+                    <!-- 车轮 -->
+                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <img src="img/luntai.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                </div>
+                <div id="" class="totwo">
+                	<a href="">即刻探索</a>
+                </div>
+			</div>
+			<!--第二页-->
+			<div class="swiper-slide swiper-slide3">
+				<div class="star-header">
+					<img class="logo-text" src="img/logo_text.png">
+					<img class="logo-img" src="img/logoright.png">
 				</div>
-				
-				<!--第三页-->
-				<div class="swiper-slide swiper-slide4">
-					<div class="star-header">
-						<img class="logo-text" src="img/logo_text.png">
-						<img class="logo-img" src="img/logoright.png">
-					</div>
-					<div class="hello">
-						<div class="demo swiper-no-swiping">
-							<canvas id="canvas2"></canvas>
-						</div>
-					</div>
-				</div>
-			
-				<div class="swiper-slide swiper-slide5">
-					<div class="star-header">
-						<img class="logo-text" src="img/logo_text.png">
-						<img class="logo-img" src="img/logoright.png">
-					</div>
-					<div class="subp">
-						即刻预约试驾，让SUV天逸给你满满安全感。<br /> 还有机会获取精美SUV天逸车模（限量50个），
-						<br /> 安全座椅（限量1套）。
-					</div>
-					<form class="footer_bd" id="frm2" action="" method="post">
-						<input class="allInput bufWid" type="text" name="realname" id="realname_n2" placeholder="姓名">
-						<input class="allInput bufWid" type="text" name="mobile" id="mobile_n2" placeholder="电话">
-						<div class="clearfix">
-							<select name="province1" id="province1_n2" class="allInput bufWid">
-								<option value="">请选择</option>
-								<option value="1">湖北省</option>
-								<option value="2">内蒙古区</option>
-								<option value="3">浙江省</option>
-								<option value="4">陕西省</option>
-								<option value="5">四川省</option>
-								<option value="6">河南省</option>
-								<option value="7">山东省</option>
-								<option value="8">甘肃省</option>
-								<option value="9">云南省</option>
-								<option value="10">宁夏区</option>
-								<option value="11">安徽省</option>
-								<option value="12">广西区</option>
-								<option value="13">天津市</option>
-								<option value="14">江苏省</option>
-								<option value="15">湖南省</option>
-								<option value="16">山西省</option>
-								<option value="17">河北省</option>
-								<option value="18">北京市</option>
-								<option value="19">吉林省</option>
-								<option value="20">辽宁省</option>
-								<option value="21">黑龙江省</option>
-								<option value="22">广东省</option>
-								<option value="23">福建省</option>
-								<option value="24">海南省</option>
-								<option value="25">贵州省</option>
-								<option value="26">江西省</option>
-								<option value="27">新疆区</option>
-								<option value="28">青海省</option>
-								<option value="29">重庆市</option>
-								<option value="30">西藏区</option>
-								<option value="31">上海市</option>
-							</select>
-							<select name="city1" id="city1_n2" style="float: right;" class="allInput bufWid">
-								<option value="">请选择市</option>
-							</select>
-						</div>
-						<div class="clearfix">
-							<select name="dealer1" id="dealer1_n2" class="dealer allInput bufWid2">
-								<option value="0">请选择经销商</option>
-							</select>
-						</div>
-						<div class="butSumitbox">
-							<input type="button" id="btnsbt_n2" class="butSumit bufWid2" value="提&nbsp;&nbsp;交">
-						</div>
-					</form>
-					<div class="sharebox">
-						<a class="share" href="">分享给朋友</a>
-					</div>
-					<div class="sharecar">
-						<img src="img/car.png"/>
+				<div class="hello">
+					<div class="demo swiper-no-swiping">
+						<canvas id="canvas1"></canvas>
 					</div>
 				</div>
 			</div>
+			
+			<!--第三页-->
+			<div class="swiper-slide swiper-slide4">
+				<div class="star-header">
+					<img class="logo-text" src="img/logo_text.png">
+					<img class="logo-img" src="img/logoright.png">
+				</div>
+				<div class="hello">
+					<div class="demo swiper-no-swiping">
+						<canvas id="canvas2"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide swiper-slide4">
+				4
+			</div>
+			<div class="swiper-slide swiper-slide5">
+				5
+			</div>
+			<div class="swiper-slide swiper-slide6">
+				<div class="star-header">
+					<img class="logo-text" src="img/logo_text.png">
+					<img class="logo-img" src="img/logoright.png">
+				</div>
+				<div class="star-title">
+					<h1>给你满满安全感</h1>
+					<p>SUV天逸350THP时尚型在第11期C-NCAP测试中获得总分XX分，荣获五星安全评价结果。</p>
+				</div>
+				<div class="star-car">
+					<img src="img/car1.png">
+				</div>
+				<div class="star-wrap">
+					<div class="star-box">
+			      <div class="anchor1">
+			        <div class="anchor-text">太空舱高强度车身</div>
+			        <div class="anchor"></div> 
+			      </div>
+			      <div class="anchor2">
+			      <div class="anchor-text">AEBS2主动紧急刹车</br>系统带前部碰撞预警</div>
+			        <div class="anchor"></div>    
+			      </div>
+			      <div class="anchor3">
+			        <div class="anchor-text">ABSD主动盲点监测系统</div>
+			        <div class="anchor"></div>
+			      </div>
+			      <div class="anchor4">
+			        <div class="anchor"></div>
+			        <div class="anchor-text">LKA车道保持辅助系统</div>
+			      </div>
+			      <div class="anchor5">
+			        <div class="anchor"></div>
+			        <div class="anchor-text">HDC陡坡缓降</div>
+			      </div>
+			      <img class="big-star" id="star" src="img/star1.png" alt="star1">
+			      <div class="hand animated pulse" id="hand">
+			        <img src="img/hand.png">
+			        <p>点亮小圆点</p>
+			      </div>
+			      <img class="small-star small-star1" src="img/star.png">
+			      <img class="small-star small-star2" src="img/star.png">
+			      <img class="small-star small-star3" src="img/star.png">
+			      <img class="small-star small-star4" src="img/star.png">
+					</div>
+				    <div class="star-button" id="next_btn">预约试驾</div>
+				</div>
+			  
+				  <div class="swiper-container" id="swiper-wrap">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide"><img src="img/P12.jpg"></div>
+				      <div class="swiper-slide"><img src="img/P13.jpg"></div>
+				      <div class="swiper-slide"><img src="img/P16.jpg"></div>
+				      <div class="swiper-slide"><img src="img/P17.jpg"></div>
+				      <div class="swiper-slide"><img src="img/P18.jpg"></div>
+				    </div>
+				    <!-- Add Arrows -->
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div>
+				    <div class="close-btn" id="close_btn"><img src="img/close.png"></div>
+				  </div>
+				</div>
 		</div>
-		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<!-- Swiper JS -->
-		<script src="js/swiper.min.js"></script>
-		<!-- animate JS -->
-		<script src="js/swiper.animate1.0.2.min.js"></script>
-		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="js/api.js" type="text/javascript" charset="utf-8"></script>-->
-		<script src="js/sj.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			// 初始化 Swiper
-			var swiper = new Swiper('.swiper-container', {
-				//布局 
-				pagination: '.swiper-pagination',
-				noSwiping: true,
-				//值为真时，当单击指示器时会执行过渡动画到目标slide
-				// paginationClickable: true,
-
-				//方向：垂直
-				direction: 'vertical',
-
-				//实现无缝切换
-				//loop:true
-
-				//自动播放
-				// autoplay:1000
-
-				//动画
-				onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
-					swiperAnimateCache(swiper); //隐藏动画元素 
-					swiperAnimate(swiper); //初始化完成开始动画
-				},
-				onSlideChangeEnd: function(swiper) {
-					swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-				}
-			});
-			$(function() {
-				/*按屏幕修改根文本尺寸*/
-				var setRootFont = function() {
-					var ww = $(document.body).width();
-					ww = ww > 1024 ? 1024 : ww;
-					var f = Math.floor(ww / 24);
-					$("html").css("font-size", f + "px");
-					$("body").css("font-size", f + "px");
-					console.log("RFS:" + f + "  (" + $("body").width() + "x" + $("body").height() + ")");
-				};
-				setRootFont();
-				$(window).resize(function() {
-					setRootFont();
-				});
-
-			});
-		</script>
-	</body>
-
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+	<!-- animate JS -->
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/star.js"></script>
+	<script type="text/javascript">
+		// 初始化 Swiper
+	    var swiper = new Swiper('#swiper', {
+	        //布局 
+	        pagination: '#swiper .swiper-pagination',
+			noSwiping : true,
+	        //值为真时，当单击指示器时会执行过渡动画到目标slide
+	        // paginationClickable: true,
+	
+	        //方向：垂直
+	        direction: 'vertical',
+	
+	        //实现无缝切换
+	        //loop:true
+	
+	        //自动播放
+	        // autoplay:1000
+	
+	        //动画
+	        onInit: function(swiper){           //Swiper2.x的初始化是onFirstInit
+	            swiperAnimateCache(swiper);     //隐藏动画元素 
+	            swiperAnimate(swiper);          //初始化完成开始动画
+	        },
+	        onSlideChangeEnd: function(swiper){ 
+	            swiperAnimate(swiper);          //每个slide切换结束时也运行当前slide动画
+	        }
+	    });
+	     $(function(){
+	    /*按屏幕修改根文本尺寸*/
+		    var setRootFont=function(){
+		      var ww=$(document.body).width();
+		      ww=ww>1024?1024:ww;
+		      var f=Math.floor(ww/ 24);
+		      $("html").css("font-size",f+"px");
+		      $("body").css("font-size",f+"px");
+		      console.log("RFS:"+f+"  ("+$("body").width()+"x"+$("body").height()+")");
+		    };
+	    	setRootFont();
+		    $(window).resize(function(){setRootFont();});  
+	     }); 
+	</script>
+</body>
 </html>
